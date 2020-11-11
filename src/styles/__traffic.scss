@@ -1,0 +1,13 @@
+.app__container{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    background: url('../system/img/case.svg') no-repeat;
+    background-size: cover;
+    box-shadow: .6rem 1.1rem .4rem rgba(0, 0, 0, 0.5);
+    border-radius: 3rem;
+}
