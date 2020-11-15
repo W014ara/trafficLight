@@ -1,6 +1,6 @@
 <template>
     <div class="timer">
-        <h1>{{this.currentTime}}</h1>
+        <h1>{{currentTime}}</h1>
     </div>
     
 </template>
@@ -9,7 +9,7 @@
 <script>
 
 export default {
-    props:['currentTime', 'currentID', 'currentShift'],
+    props: ['currentTime']
 }
 </script>
 

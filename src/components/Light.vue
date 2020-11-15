@@ -1,25 +1,14 @@
 <template>
-    <div v-bind:class="addClass(currentID, checkID) ? 'light warning' : 'light'" 
-         :style="{backgroundColor: color, boxShadow: '0rem .5rem 3rem ' + color}" 
-         :id="this.currentID">
+    <div v-bind:class="(currentColor !== 'black' && radiance) ? 'light warning' : 'light'" 
+         v-bind:style="{background: currentColor, 
+                        boxShadow: `0rem .5rem 3rem ${currentColor}`}">
     </div>
 </template>
 
 
 <script>
 export default {
-    props: ['color', 'currentID', 'checkID', 'warningToggle'],
-    methods:{
-        addClass(id,checkid){
-            let toggle = false;
-            if(this.warningToggle){
-                if(+id === +checkid){
-                    toggle = true;
-                }else toggle = false;
-            }
-            return toggle
-        }
-    }
+   props: ['currentColor', 'radiance'],
 }
 </script>
 

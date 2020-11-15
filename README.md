@@ -1,4 +1,4 @@
-# traffic
+# Traffic Light
 
 ## Project setup
 ```
@@ -7,7 +7,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run start
 ```
 
 ### Compiles and minifies for production
@@ -19,6 +19,8 @@ npm run build
 ```
 npm run lint
 ```
+### Scheme processing
+<img src="scheme.png" width="600" height="400" style="margin:0 auto" />
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Figma Link
+<https://www.figma.com/file/1LaLdYtG5UTRsS0TYrMR3x/traffic-light?node-id=0%3A1>
